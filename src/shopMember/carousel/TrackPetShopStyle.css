@@ -1,0 +1,32 @@
+.trackContainer {
+    height: 4rem;
+    background-color: #FFE8DA;
+    display: flex;
+    justify-content: center;
+}
+
+.trackInnerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.trackIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.trackIconCircle {
+    height: 2rem;
+    background-color: white;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin-right: 10px;
+}
