@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/petshop/static/css/main.4040233d.css",
+    "main.js": "/petshop/static/js/main.b2c70789.js",
+    "index.html": "/petshop/index.html",
+    "main.4040233d.css.map": "/petshop/static/css/main.4040233d.css.map",
+    "main.b2c70789.js.map": "/petshop/static/js/main.b2c70789.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4040233d.css",
+    "static/js/main.b2c70789.js"
+  ]
+}
