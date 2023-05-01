@@ -1,6 +1,7 @@
 {
   "name": "pet",
   "version": "0.1.0",
+  "homepage": "https://sisrar40.github.io/petshop",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
@@ -8,6 +9,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.2.0",
+    "gh-pages": "^5.0.0",
     "otp-input-react": "^0.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,6 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
