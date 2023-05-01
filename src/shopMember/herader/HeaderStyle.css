@@ -43,6 +43,10 @@
 }
 
 .headerContainer {
-    background-color: #FFE8DA;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: #E7E6DD;
     height: 4rem;
+
 }

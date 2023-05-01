@@ -1,6 +1,8 @@
 import React from 'react'
 import './TrackPetShopStyle.css'
 import { ShopTwoTone, MessageTwoTone, DashboardTwoTone } from '@ant-design/icons'
+import { Link } from "react-router-dom"
+
 
 function TrackPetShop() {
     return (
@@ -18,12 +20,15 @@ function TrackPetShop() {
                     </div>
                     <div>75+ Store & Saps</div>
                 </div>
-                <div className='trackIcon'>
-                    <div className='trackIconCircle'>
-                        <MessageTwoTone />
+                <Link to='contact-us'>
+                    <div className='trackIcon'>
+                        <div className='trackIconCircle'>
+                            <MessageTwoTone />
+                        </div>
+                        <div>24/7 Support</div>
                     </div>
-                    <div>24/7 Support</div>
-                </div>
+                </Link>
+
             </div>
         </div>
     )

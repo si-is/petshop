@@ -1,0 +1,12 @@
+.productContainer {
+    display: flex;
+}
+
+.productFilterContainer {
+    position: sticky;
+    top: 100px;
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.productViewContainer {}

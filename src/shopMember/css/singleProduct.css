@@ -1,0 +1,29 @@
+.singleProductContainer {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.singleImage {
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 4px;
+    border-color: #E6E6E6;
+}
+
+#imgframe {
+    height: 25rem;
+    width: 20rem;
+    border-radius: 4px;
+}
+
+.singleInfo {
+    margin-left: 2rem;
+}
+
+#singleDis {
+    margin-top: 1rem;
+    width: 20rem;
+    text-align: justify;
+    color: rgb(118 116 116);
+}

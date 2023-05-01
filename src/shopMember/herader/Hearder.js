@@ -1,36 +1,25 @@
-import { AppBar, IconButton, Typography } from '@material-ui/core'
+import { IconButton, } from '@material-ui/core'
 import { SearchOutlined, UserOutlined, ShoppingCartOutlined } from '@ant-design/icons';
-import { Button, Input, Badge } from 'antd';
-import React from 'react'
+import { Modal, Badge } from 'antd';
+import React, { useState } from 'react'
 import './HeaderStyle.css'
+import Login from '../login/Login';
 
 
 function Hearder() {
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
-
-    const onSearch = (value) => {
-        console.log(value)
-    }
+    const showModal = () => {
+        setIsModalOpen(true);
+    };
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
 
     return (
-        // <AppBar position="static" >
-        //     <div className='header'>
-        //         <div style={{ color: '#000' }}>company logo</div>
-        //         <div className='serachContainer'>
-        //             <Input placeholder="Search..." className='searchInput' />
-        //             <Button className='btnSearch'><SearchOutlined /></Button>
-        //         </div>
-        //         <div style={{ display: 'flex', alignItems: 'center' }}>
-        //             <Badge count={5} style={{ cursor: 'pointer' }}>
-        //                 <ShoppingCartOutlined className='userIcon' style={{ cursor: 'pointer' }} />
-        //             </Badge>
-        //             <IconButton style={{ marginLeft: '1rem' }}>
-        //                 <UserOutlined className='userIcon' />
-        //             </IconButton>
-        //         </div>
-        //     </div>
-
-        // </AppBar>
         <div className='headerContainer'>
             <div className='header'>
                 <div>Company Logo</div>
@@ -44,11 +33,14 @@ function Hearder() {
                     <Badge count={5} style={{ cursor: 'pointer' }}>
                         <ShoppingCartOutlined className='userIcon' style={{ cursor: 'pointer' }} />
                     </Badge>
-                    <IconButton style={{ marginLeft: '1rem' }}>
+                    <IconButton style={{ marginLeft: '1rem' }} onClick={() => showModal()}>
                         <UserOutlined className='userIcon' />
                     </IconButton>
                 </div>
             </div>
+            <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={null}>
+                <Login />
+            </Modal>
         </div>
     )
 }

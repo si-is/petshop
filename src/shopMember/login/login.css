@@ -1,0 +1,24 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.loginText {
+    text-align: center;
+}
+
+#loginCard {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#loginBtn {
+    width: 100%;
+}
+
+#loginOtpContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

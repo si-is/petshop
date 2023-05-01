@@ -1,0 +1,11 @@
+.cardStyle {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+}

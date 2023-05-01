@@ -1,10 +1,10 @@
 import React from 'react'
-import LandingPage from './shopMember/home/LandingPage'
+import RoutNav from './RoutNav';
 
 function App() {
   return (
     <div>
-      <LandingPage />
+      <RoutNav />
     </div>
   );
 }

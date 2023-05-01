@@ -2,26 +2,27 @@ import React from 'react'
 import { Carousel } from 'antd';
 
 const contentStyle = {
-    height: '300px',
+    height: '200px',
     color: '#fff',
     lineHeight: '200px',
     textAlign: 'center',
     margin: '10px',
-    width: '98%'
+    width: '98%',
+    borderRadius: '6px'
 
 };
 
 function ImageCarousel() {
     return (
-        <Carousel autoplay arrows>
+        <Carousel autoplay arrows >
             <div>
-                <img style={contentStyle} src='https://www.shutterstock.com/image-photo/dog-lies-comfortably-on-yellow-260nw-1761267053.jpg' />
+                <img alt='' style={contentStyle} src='https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Dash-Dog-_Web_1500x.jpg?v=1681323589' />
             </div>
             <div>
-                <img style={contentStyle} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyWnPIjqElSvSc27fr2fV6S490IB7exUd36w&usqp=CAU' />
+                <img alt='' style={contentStyle} src='https://cdn.shopify.com/s/files/1/0086/0795/7054/files/pet_food_web_93d72538-03e0-430f-ac3c-dd7309cc9e2f_1500x.jpg?v=1681279036' />
             </div>
             <div>
-                <img style={contentStyle} src='https://static.vecteezy.com/system/resources/thumbnails/007/301/665/small/pet-shop-banner-design-template-cartoon-illustration-of-cats-dogs-house-food-vector.jpg' />
+                <img alt='' style={contentStyle} src='https://cdn.shopify.com/s/files/1/0086/0795/7054/files/YIMT_web_b2c91449-22c8-4dfd-8ef8-2ebced98faf1_1500x.jpg?v=1681222742' />
             </div>
 
         </Carousel>
